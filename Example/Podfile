@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HMHColors_Example' do
+  pod 'HMHColors', :path => '../'
+
+  target 'HMHColors_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
