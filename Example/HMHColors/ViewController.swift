@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import HMHColors
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var goldenView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        goldenView.backgroundColor = HMHColors.golden.color()
     }
 
     override func didReceiveMemoryWarning() {
