@@ -30,7 +30,10 @@ public enum HMHColors: String {
     ///
     /// - Returns: The desired UIColor
     public func color() -> UIColor {
-        guard let color =  UIColor(named: self.rawValue.capitalized) else {
+        guard let bundle = Bundle(identifier: "org.cocoapods.HMHColors") else {
+            fatalError("Can't get the bundle!")
+        }
+        guard let color =  UIColor(named: self.rawValue.capitalized, in: bundle, compatibleWith: nil ) else {
             fatalError("Color information is missing for \(self.rawValue.capitalized)")
         }
         return color

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HMHColors'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of HMHColors.'
+  s.version          = '1.0.0'
+  s.summary          = '`Library containing all of the official HMH colors from the 2019 Style Guide.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+`HMHColors` is a library containing all of the official HMH colors from the 2019 Style Guide. It allows any of the HMH colors to be used from either IB or within code saving you from looking them up in the style guide yourself.
                        DESC
 
   s.homepage         = 'https://github.com/theMikeSwan-HMH/HMHColors'

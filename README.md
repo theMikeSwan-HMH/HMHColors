@@ -1,4 +1,5 @@
 # HMHColors
+`HMHColors` is a library containing all of the official HMH colors from the [2019 Style Guide](https://today.hmhco.com/Documents/HMH_Style_Guide_2019.pdf).
 
 [![CI Status](https://img.shields.io/travis/theMikeSwan-HMH/HMHColors.svg?style=flat)](https://travis-ci.org/theMikeSwan-HMH/HMHColors)
 [![Version](https://img.shields.io/cocoapods/v/HMHColors.svg?style=flat)](https://cocoapods.org/pods/HMHColors)
@@ -8,6 +9,14 @@
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+You will get a warning in the console for each color that has been assigned in the storyboard (which is all but one color) when running the example app saying:
+
+~~~
+Unable to resolve the color named "…" from any of the following bundles: …
+~~~
+
+The colors still show up correctly despite this error and it is currently unknown what the cause is. Colors assigned from code rather than in IB do not cause this warning.
 
 ## Requirements
 - Swift 5.0
@@ -45,7 +54,7 @@ You can use the colors from code with :
 someView.backgroundColor = HMHColors.golden.color()
 ```
 
-You can also select the colors directly in the Interface Builder portion of Xcode under the 'Named Colors' section.
+You can also select the colors directly in the Interface Builder portion of Xcode under the 'Named Colors' section. Assigning colors in this fashion will likely lead to wanrings in the console when running the app but the colors should still appear correctly.
 
 ![Named Colors](./namedColors.png)
 
